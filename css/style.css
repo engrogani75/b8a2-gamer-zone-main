@@ -103,7 +103,6 @@ a{
 
 .banner-section{
     margin-top: 1rem;
-    border: 5px solid green;
 }
 
 .banner-container{
@@ -117,6 +116,8 @@ a{
 .banner-content{
     width: 50%;
     text-align: start;
+    background-color: rgba(241, 68, 174, 0.6) 100%;
+    background: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);;
 }
 
 
@@ -180,6 +181,136 @@ a{
     max-width: 100%;
 }
 
+/* main section css */
+
+.funny-continer{
+    /* border: 5px solid red; */
+    text-align: center;
+    max-width: 1240px;
+    margin: 1rem auto;
+}
+
+.funy-img{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.9rem;
+}
+
+.funy-img .card{
+    margin: 0.2rem auto;
+}
+
+.funy-img img{
+    max-width: 100%;
+}
+
+.funy-img p{
+    font-size: 1rem;
+    text-align: justify;
+    color: var(--para-color);
+    font-weight: 500;
+    max-width: 300px;
+    margin-top: 1rem;
+}
+
+
+/* ---play game section css------ */
+
+.play-games-section{
+    max-width: 1240px;
+    margin: 1rem auto;
+}
+
+.play-continer{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.play-continer .play-content{
+    max-width: 341px;
+}
+
+.playclr-heading{
+    text-align: end;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.playclr-heading span{
+    background: var(--linear-gradent2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-content p{
+    font-size: 1.1rem;
+    color: var(--para-color);
+}
+
+
+
+.small-img{
+    max-width: 200px;
+}
+
+.small-img img{
+    position: relative;
+    bottom: 200px;
+    left: -100px;
+}
+
+
+
+.play-continer .play-img img{
+    width: 100%;
+}
+
+/* ---game item css start---- */
+
+.game-section{
+    margin-top: 1rem;
+}
+
+.game-content{
+    max-width: 1240px;
+    margin: 1rem auto;
+}
+
+.game-img{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "one two three four five"
+    ;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .game-img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+} */
+
+
+.game-img img{
+    display: inline-block;
+    position: relative;
+    bottom: -1.4rem;
+}
+
+
+
+
 /* Resonsive css */
 
 @media screen and (max-width: 576px) {
@@ -206,6 +337,8 @@ a{
         
     }
 
+    /* Banner section css */
+
     .banner-container{
        flex-direction: column-reverse;
     }
@@ -223,6 +356,67 @@ a{
 }
 
 
+/* funny section css */
+
+
+.funy-img{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+}
+
+.funy-img .card{
+    text-align: center;
+    margin: 0.2rem auto;
+}
+
+.funy-img p{
+    font-size: 0.6rem;
+    text-align: center;
+    color: var(--para-color);
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* play section  */
+
+.play-continer {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1rem auto;
+    gap: 1px;
+}
+
+.play-continer .play-content {
+    max-width: 300px;
+    margin: 1rem auto;
+}
+
+.playclr-heading{
+    font-size: 2.3rem;
+}
+
+
+.play-continer .play-img{
+    max-width: 70%;
+    margin: 1rem auto;
+}
+
+
+
+.play-continer .play-img .small-img img {
+    width: 50%;
+}
+
+.small-img img {
+    position: relative;
+    bottom: 89px;
+    left: -100px;
+}
+    
+
+
+
 
 
           
@@ -237,6 +431,83 @@ a{
     .nav-container .menu li{
         margin-top: 3rem;
     }
+
+    .banner-container{
+        flex-direction: column-reverse;
+     }
+ 
+     .banner-content{
+         width: 100%;
+         text-align: center;
+     }
+ 
+     
+ .image-content{
+     width: 100%;
+     padding-top: 5rem;
+     padding-bottom: 5rem;
+ }
+
+ .image-content img{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* funny section css */
+
+
+.funy-img{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem;
+}
+
+.funy-img .card{
+    text-align: center;
+    margin: 0.2rem auto;
+}
+
+.funy-img p{
+    text-align: start;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* play section  */
+
+.play-continer {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem auto;
+    gap: 1px;
+}
+
+.play-continer .play-content {
+    max-width: 300px;
+    margin: 1rem auto;
+}
+
+.playclr-heading{
+    font-size: 2.3rem;
+}
+
+
+.play-continer .play-img{
+    max-width: 90%;
+    margin: 1rem auto;
+}
+
+
+.play-continer .play-img .small-img img {
+    width: 50%;
+}
+
+.small-img img {
+    position: relative;
+    bottom: 89px;
+    left: -100px;
+}
+    
 
 }
 
