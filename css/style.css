@@ -1,0 +1,137 @@
+/* common css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --logo-color: #0B0223;
+    --white: #fff;
+    --para-color: #534C64;
+    --nav-color: #3C354F;
+    --bg-color: rgba(11, 2, 35, 0.10);
+    --linear-gradent: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    --linear-gradent2: linear-gradient(180deg, #F948B2 0%, #8758F1 100%); 
+}
+
+/* header container css start */
+
+.header-container{
+    margin: 0;
+    border: 2px solid red;
+}
+
+.nav{
+    background-color: var(--white);
+    min-height: 130px;
+}
+
+.nav-container{
+    margin: 0 auto;
+    max-width: 1240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-container .logo{
+    width: 50%;
+}
+
+.nav-container .menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo-para{
+    color: var(--logo-color);
+    font-size: 2.9rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+
+.logo-span{
+    background: var(--linear-gradent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.follow-icon{
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
+}
+
+.nav-container .menu a{
+    color: var(--nav-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.fa-youtube{
+    color: #F61C0D;
+    font-size: 24px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.fa-tiktok{
+    color: rgba(8, 255, 249, 1);
+    font-size: 24px;
+}
+
+/* Resonsive css */
+
+@media screen and (max-width: 576px) {
+    .nav-container,
+    .nav-container .menu{
+       flex-direction: column;
+    }
+    
+    .logo{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-container .menu{
+        width: 100%;
+    }
+
+    .nav-container .menu li{
+        margin-top: 2rem;
+    }
+
+    .follow-icon{
+        display: flex;
+        
+    }
+       
+}
+
+
+
+
+
+
+
+
+
