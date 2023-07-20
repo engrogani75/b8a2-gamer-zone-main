@@ -200,11 +200,53 @@ a{
 
 .funy-img .card{
     margin: 0.2rem auto;
+    position: relative;
+    overflow: hidden;
 }
 
 .funy-img img{
     max-width: 100%;
+   
 }
+
+.play-btn{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    top: 32%;
+    left: 10%;
+
+}
+
+.fa-play{
+    width: 48px;
+    height: 48px;
+    border-radius: 30px; 
+    color: #fff;
+}
+
+
+.card > img,
+.card > .play-btn {
+  transition: 200ms ease-in-out;
+}
+
+.card:hover > img.blur {
+  filter: blur(2px);
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: #0B0223;
+}
+
+.card > .play-btn{
+    display: none;
+  }
+  .card:hover > .play-btn{
+    display: block;
+    cursor: pointer;
+    
+  }
 
 .funy-img p{
     font-size: 1rem;
@@ -213,6 +255,16 @@ a{
     font-weight: 500;
     max-width: 300px;
     margin-top: 1rem;
+}
+
+.play-btn p{
+    font-size: 1.25em;
+    color: #fff;
+    font-weight: 700;
+    background: var(--linear-gradent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 
