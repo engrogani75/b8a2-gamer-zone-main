@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
+ 
 }
 
 li{
@@ -278,11 +279,14 @@ a{
 .game-section{
     margin-top: 1rem;
     padding-bottom: 3rem;
+    border: 3px solid red;
 }
 
 .game-content{
     max-width: 1240px;
     margin: 1rem auto;
+    min-height: 200px;
+    border: 5px solid green;
 }
 
 /* .game-img{
@@ -294,15 +298,36 @@ a{
 } */
 
 .game-img{
+    max-width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+}
+
+.game-img li{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.game-img a{
+
+.game-img a {
     font-size: 1.25rem;
     color: var(--logo-color);
     transition: 0.1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.game-img img{
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
 }
 
 
@@ -324,13 +349,6 @@ a{
 
 
 
-.game-img img{
-    display: inline-block;
-    position: relative;
-    bottom: -1.4rem;
-    margin-right: 10px;
-}
-
 /* Footer Css start here */
 
 footer{
@@ -340,10 +358,17 @@ footer{
 .footer-container{
     max-width: 1240px;
     margin: 0 auto;
+   
+}
+
+.footer-content{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 100%;
+    border: 2px solid green;
+    margin: 0 auto;
 }
 
 .footer-logo{
@@ -389,10 +414,15 @@ footer{
 
 /* Resonsive css */
 
+body{
+    overflow-x: hidden;
+}
+
 @media screen and (max-width: 576px) {
     .nav-container,
     .nav-container .menu{
        flex-direction: column;
+      
     }
     
     .logo{
@@ -461,6 +491,7 @@ footer{
     grid-template-columns: repeat(1, 1fr);
     margin: 1rem auto;
     gap: 1px;
+    overflow-x: hidden;
 }
 
 .play-continer .play-content {
@@ -503,6 +534,8 @@ footer{
 .mobile{
     display: block;
 }
+
+
 .game-img{
   gap: 5px;
   min-height: 50px;
@@ -510,12 +543,7 @@ footer{
 
 .game-img a{
     font-size: 10px;
-    color: var(--logo-color);
-    transition: 0.1s ease-in-out;
 }
-
-
-
 
 
 .game-img img{
@@ -524,47 +552,6 @@ footer{
     bottom: -0.8rem;
     margin-right: 2px;
 }
-
-/* .one{
-    grid-column: span 3
-}
-
-.two{
-    grid-column: span 3 
-}
-
-.three{
-    grid-column: span 3 
-}
-
-.four{
-    grid-column: span 3 
-}
-.five {
-    grid-column: span 3 
-}
-
-.six{
-    margin-left: 0rem;
-    grid-column: span 3;
-}
-
-.seven{
-    grid-column: span 3
-}
-
-.eight{
-    grid-column: span 3
-}
-
-.nine{
-    grid-column: span 3
-} */
-    
-
-
-
-
 
           
 }
@@ -655,59 +642,16 @@ footer{
     left: -100px;
 }
 
-.game-img{
-    grid-template-columns: repeat(8, 1fr);
+.game-img a {
+    font-size: 1.25rem;
+    color: var(--logo-color);
+    transition: 0.1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.game-img a{
-    font-size: 13px;
-    
-}
 
-.game-img img{
-    width: 30px;
-    height: 30px;
-    bottom: -1rem;
-}
-
-.one{
-    grid-column: span 2
-}
-
-.two{
-    grid-column: span 2 
-}
-
-.three{
-    grid-column: span 2 
-}
-
-.four{
-    grid-column: span 2 
-}
-.five {
-    margin-left: 2rem;
-    grid-column: span 3 
-}
-
-.six{
-    margin-left: 0rem;
-    grid-column: span 2;
-}
-
-.seven{
-    margin-right: 2rem;
-    grid-column: span 3
-}
-
-.eight{
-    margin: auto;
-    grid-column: span 3
-}
-
-.nine{
-    grid-column: span 3
-}
     
 
 }
