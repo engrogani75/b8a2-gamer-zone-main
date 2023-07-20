@@ -88,7 +88,7 @@ a{
     font-weight: 500;
 }
 
-.fa-youtube{
+.follow-icon > .fa-youtube{
     color: #F61C0D;
     font-size: 24px;
     padding-right: 0.5rem;
@@ -416,7 +416,20 @@ footer{
     font-size: 40px;
 }
 
-.fa-youtube{
+.social-icon  .fa-youtube{
+    color: #FF0000;
+    background-color: #FFFFFF;
+    font-size: 40px;
+    padding: 0px;
+}
+
+.fa-linkedin{
+    color: var(--white);
+    font-size: 40px;
+}
+
+.fa-apple{
+    color: var(--white);
     font-size: 40px;
 }
 
@@ -609,7 +622,7 @@ footer{
                                           
 }
 
-.social-icon,
+
 .privacy
 {
     display: grid;
@@ -618,43 +631,28 @@ footer{
     align-items: center;
 }
 
+
+.social-icon
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
 .social-icon li{
     padding: 1rem;
 }
 
-.fa-twitter{
-    color: #fff;
-    font-size: 40px;
-}
-
-
-.fa-facebook{
-    color: #fff;
-    background-color: rgba(24, 119, 242, 1);
-    font-size: 40px;
-}
-
-.fa-youtube{
-    font-size: 40px;
-}
-
-.fa-instagram{
-    color:var(--white);
-    font-size: 40px;
-}
-
-
 .privacy li{
     font-size: 1rem;
     padding: 1rem;
-    color: rgba(255, 255, 255, 0.60);
-    font-weight: 500;
 }
 
 .copy p{
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
-    font-size: 16px;
+    padding-top: 1rem;
+    font-size: 13px;
     font-weight: 500;
   
 }
