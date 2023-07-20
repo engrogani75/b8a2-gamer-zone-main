@@ -595,6 +595,70 @@ footer{
 
 
 
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+   
+}
+.content li{
+    font-size: 13px;
+    padding: 1rem;
+                                          
+}
+
+.social-icon,
+.privacy
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon li{
+    padding: 1rem;
+}
+
+.fa-twitter{
+    color: #fff;
+    font-size: 40px;
+}
+
+
+.fa-facebook{
+    color: #fff;
+    background-color: rgba(24, 119, 242, 1);
+    font-size: 40px;
+}
+
+.fa-youtube{
+    font-size: 40px;
+}
+
+.fa-instagram{
+    color:var(--white);
+    font-size: 40px;
+}
+
+
+.privacy li{
+    font-size: 1rem;
+    padding: 1rem;
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 500;
+}
+
+.copy p{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+  
+}
+
 
           
 }
