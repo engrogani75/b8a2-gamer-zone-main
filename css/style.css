@@ -352,6 +352,7 @@ a{
 
 footer{
     background-color: var(--logo-color);
+    padding-bottom: 8rem;
 }
 
 .footer-container{
@@ -386,6 +387,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    max-width: 100%;
 }
 .content li{
     font-size: 18px;
@@ -402,9 +404,49 @@ footer{
     padding: 1rem 2rem;
 }
 
-.social-icon fa-brands{
-
+.fa-twitter{
+    color: #fff;
+    font-size: 40px;
 }
+
+
+.fa-facebook{
+    color: #fff;
+    background-color: rgba(24, 119, 242, 1);
+    font-size: 40px;
+}
+
+.fa-youtube{
+    font-size: 40px;
+}
+
+.fa-instagram{
+    color:var(--white);
+    font-size: 40px;
+}
+
+.privacy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.privacy li{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 500;
+}
+
+.copy p{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+  
+}
+
+
 
 
 
